@@ -16,7 +16,7 @@ import { Vector3 } from './Vector3';
 
 function Matrix4() {
 
-	this.elements = new Float32Array( [
+	this.elements = new Float64Array( [
 
 		1, 0, 0, 0,
 		0, 1, 0, 0,

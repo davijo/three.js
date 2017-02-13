@@ -3337,7 +3337,7 @@ Vector3.prototype = {
 
 function Matrix4() {
 
-	this.elements = new Float32Array( [
+	this.elements = new Float64Array( [
 
 		1, 0, 0, 0,
 		0, 1, 0, 0,
@@ -4476,7 +4476,7 @@ function setValue3fm( gl, v ) {
 
 function setValue4fm( gl, v ) {
 
-	gl.uniformMatrix4fv( this.addr, false, v.elements || v );
+	gl.uniformMatrix4fv( this.addr, false, new Float32Array(v.elements) || v );
 
 }
 

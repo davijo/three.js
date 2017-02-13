@@ -179,7 +179,7 @@ function setValue3fm( gl, v ) {
 
 function setValue4fm( gl, v ) {
 
-	gl.uniformMatrix4fv( this.addr, false, v.elements || v );
+	gl.uniformMatrix4fv( this.addr, false, new Float32Array(v.elements) || v );
 
 }
 
